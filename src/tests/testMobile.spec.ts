@@ -11,7 +11,7 @@ test("input fields", async ({ page }) => {
     .getByRole("textbox", { name: "Email" });
 
   await usingtheGridEmailInput.fill("test@test.com");
-  //await page.screenshot({path: 'screenshots/formsLayoutPage.png'})
+  //await page.screenshot({path: 'screenshots/foshrmsLayoutPage.png'})
   await usingtheGridEmailInput.clear(); //clear the text
   await usingtheGridEmailInput.pressSequentially("test2@test.com"); //pressSequentially is used to write sequentially with delay we can add
 });
